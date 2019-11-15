@@ -1,6 +1,6 @@
 {
   "name": "keep-alive-scroll",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "让keep-alive固定宽度或者高度的组件scroll回到原来的位置",
   "main": "./src/index.js",
   "files": [
