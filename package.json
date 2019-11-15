@@ -1,7 +1,22 @@
 {
-  "name": "root",
-  "private": true,
-  "devDependencies": {
-    "lerna": "^3.18.4"
-  }
+  "name": "keep-alive-scroll",
+  "version": "1.0.0",
+  "description": "让keep-alive固定宽度或者高度的组件scroll回到原来的位置",
+  "main": "./src/index.js",
+  "files": [
+    "src", "packages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisDowney1996/keep-alive-scroll.git"
+  },
+  "author": "Andou",
+  "license": "WTFPL",
+  "keywords": [
+    "keep-alive-scroll", "vue-keep-alive-scroll"
+  ],
+  "bugs": {
+    "url": "https://github.com/ChrisDowney1996/keep-alive-scroll/issues"
+  },
+  "homepage": "https://github.com/ChrisDowney1996/keep-alive-scroll#readme"
 }

@@ -1,3 +1,7 @@
 import KeepAliveScroll from './src'
 
-export {KeepAliveScroll}
+KeepAliveScroll.install = function(Vue) {
+  Vue.component(KeepAliveScroll.name, KeepAliveScroll)
+}
+
+export default KeepAliveScroll

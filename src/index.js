@@ -1,13 +1,7 @@
-import {KeepAliveScroll} from '../packages/keep-alive-scroll/index.js';
-
-const components = [
-  KeepAliveScroll
-]
+import KeepAliveScroll from '../packages/keep-alive-scroll/index.js'
 
 const install = function(Vue, opts = {}) {
-  components.forEach(component => {
-    Vue.component(component.name, component)
-  })
+  Vue.component(KeepAliveScroll.name, KeepAliveScroll)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
