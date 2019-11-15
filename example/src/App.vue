@@ -3,6 +3,14 @@
     <keep-alive>
       <router-view/>
     </keep-alive>
+<!--    <transition name="content-router-t" mode="out-in">-->
+<!--      <keep-alive>-->
+<!--        <router-view v-if="$route.meta.keepAlive"/>-->
+<!--      </keep-alive>-->
+<!--    </transition>-->
+<!--    <transition name="content-router-t" mode="out-in">-->
+<!--      <router-view v-if="!$route.meta.keepAlive"></router-view>-->
+<!--    </transition>-->
   </div>
 </template>
 

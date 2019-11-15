@@ -15,12 +15,15 @@ export default {
       keepAliveScrollDOM.scrollTop = (!Number.isNaN(scrollTop) && scrollTop > 0) ? scrollTop : 0
       keepAliveScrollDOM.scrollLeft = (!Number.isNaN(scrollLeft) && scrollLeft > 0) ? scrollLeft : 0
     }
+    this._hasKeepAlive = true
   },
   methods: {
     scrollListener (e) {
-      const el = e.target
-      el.setAttribute('data-keep-alive-scroll-top', el.scrollTop.toString())
-      el.setAttribute('data-keep-alive-scroll-left', el.scrollLeft.toString())
+      if (this._hasKeepAlive) {
+        const el = e.target
+        el.setAttribute('data-keep-alive-scroll-top', el.scrollTop.toString())
+        el.setAttribute('data-keep-alive-scroll-left', el.scrollLeft.toString())
+      }
     }
   },
   render (h) {
